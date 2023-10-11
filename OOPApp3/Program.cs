@@ -1,14 +1,16 @@
 ﻿//Global ใช้ทุกที่
-string  Id="";
-string Name="";
-double Price = 0;
-double Amount = 0;
-double rate1;
+string  Id="11";
+string Name="Coffee";
+double Price = 10;
+double Amount = 10;
+double rate1=0.5;
 
 Random random = new Random();
 
 //เรียกใช้
-Input();
+//Input();
+Display();
+Update(ref Id,ref Name,Price);
 Display();
 
 void Display()
@@ -39,4 +41,12 @@ double Process(double rate=0)
     var sum = Price * Amount;
     var result = sum - sum * rate;
     return result;
+}
+
+//การส่งตัวแปรแบบอ้างอิง
+void Update(ref string id,ref string name,double price)
+{
+    id = id + "555";
+    name = name + "555";
+    price = price + 555;
 }
