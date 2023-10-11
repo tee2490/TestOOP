@@ -9,8 +9,16 @@ Random random = new Random();
 
 //เรียกใช้
 //Input();
-Display();
-Update(ref Id,ref Name,Price);
+//Display();
+//Update(ref Id,ref Name,Price);
+//Display();
+
+// พารามิเตอร์แบบส่งค่าออกมาอย่างเดียว
+rate1 = Cal(out string id, out string name, out double price,out double amount);
+Id = id;
+Name = name;
+Price = price;
+Amount = amount;
 Display();
 
 void Display()
@@ -49,4 +57,13 @@ void Update(ref string id,ref string name,double price)
     id = id + "555";
     name = name + "555";
     price = price + 555;
+}
+
+double Cal(out string id,out string name,out double price,out double amount)
+{
+    id = "777";
+    name = "Banana";
+    price = 5;
+    amount = 5;
+    return 0.1;
 }
