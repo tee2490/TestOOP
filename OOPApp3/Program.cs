@@ -1,5 +1,5 @@
 ﻿//Global ใช้ทุกที่
-string  Id="11";
+string Id="11";
 string Name="Coffee";
 double Price = 10;
 double Amount = 10;
@@ -20,6 +20,9 @@ Name = name;
 Price = price;
 Amount = amount;
 Display();
+
+// Params Parameter
+Console.WriteLine($" Summary =  {Summary(1,2,3,4,5)} " );
 
 void Display()
 {
@@ -66,4 +69,13 @@ double Cal(out string id,out string name,out double price,out double amount)
     price = 5;
     amount = 5;
     return 0.1;
+}
+
+double Summary(params int[] numbers)
+{
+    foreach (var item in numbers)
+    {
+        Console.Write(item + " ");
+    }
+    return numbers.Sum();
 }
