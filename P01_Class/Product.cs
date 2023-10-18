@@ -16,6 +16,14 @@ namespace P01_Class
         // => Lamda, Arrow function
         //Method
         public void Display() => Console.WriteLine($"{Id} {Name} {Price} {Amount}");
+
+        public void Input(Product product) 
+        { 
+            Id = product.Id;
+            Name = product.Name;
+            Price = product.Price;
+            Amount = product.Amount;
+        }
         
     }
 }
