@@ -12,5 +12,10 @@ namespace P01_Class
         //Default Method get set
         //get อ่านค่า
         //set ใส่ค่า
+
+        // => Lamda, Arrow function
+        //Method
+        public void Display() => Console.WriteLine($"{Id} {Name} {Price} {Amount}");
+        
     }
 }

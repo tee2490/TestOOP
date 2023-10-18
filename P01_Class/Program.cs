@@ -16,11 +16,6 @@ ton.Name = "Cream";
 ton.Price = 20;
 ton.Amount = 20;
 
-//Reuse ใช้ซ้ำ
-Display(product);
-Display(ton);
+product.Display();
+ton.Display();
 
-void Display(Product p)
-{
-    Console.WriteLine($"{p.Id} {p.Name} {p.Price} {p.Amount}");
-}
