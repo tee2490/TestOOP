@@ -1,15 +1,19 @@
 ﻿
 using P01_Class;
 
-//Object วัตถุ
-Product product = new Product();
-Product ton = new Product();
-Product Sumo = new Product();
+//list ไม่จำกัดจำนวน
+List<Product> products = new List<Product>();
+Random rand = new Random();
 
-product.Input(new Product {Id=1,Name="Coffee",Price=100,Amount=10 });
-ton.Input(new Product { Id = 2, Name = "Coffee2", Price = 200, Amount = 20 });
+for (int i = 1; i < 10; i++)
+{
+    products.Add(new Product 
+    { 
+        Id = i,
+        Name = "Coffee"+i,
+        Price = rand.NextDouble() * 990 + 10,
+        Amount = rand.Next(10,50)
+    });
+}
 
-
-product.Display();
-ton.Display();
-
+products.ForEach(p => p.Display());
