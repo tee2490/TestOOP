@@ -19,10 +19,12 @@
             Console.WriteLine($"{number}");
         }
 
-        public Product(string name)
+        public Product(string Name)
         {
             Products = new List<Product>();
-            Name = name;
+
+            //this คือ ระบุว่าเป็น properties ภายในคลาส
+            this.Name = Name;
         }
 
 
