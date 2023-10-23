@@ -6,12 +6,14 @@
         public string Name { get; set; }
         public double Price { get; set; }
         public int Amount { get; set; }
- 
+
+        //การมีอยู่ การฝัง
+        static public List<Product> Products { get; set; } = new List<Product>();
 
         //Constructor ชื่อเดียวกับคลาส
         public Product()
         {
-            Products = new List<Product>();
+
         }
 
         public Product(int number)
@@ -21,14 +23,10 @@
 
         public Product(string Name)
         {
-            Products = new List<Product>();
-
             //this คือ ระบุว่าเป็น properties ภายในคลาส
             this.Name = Name;
         }
-
-
-        public List<Product> Products { get; set; }
+ 
 
         public void GenerateProduct(int number = 1)
         {
