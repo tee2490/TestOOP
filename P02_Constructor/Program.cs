@@ -2,6 +2,9 @@
 
 using P02_Constructor;
 
-new Product();
-new Product(100);
-new Product(100,"Coffee");
+//var products = new Product();
+var products = new Product("Banana");
+
+products.GenerateProduct(10);
+products.Display();
+
