@@ -1,7 +1,7 @@
 ﻿
 using HW01_Solution;
 
-var test = new Employee();
+var test = new User();
 
 test.Display(5);
 

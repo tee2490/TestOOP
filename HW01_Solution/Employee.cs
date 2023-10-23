@@ -14,7 +14,7 @@ namespace HW01_Solution
 
 
         //Method
-        List<Employee> GenerateData(int number=1)
+        public List<Employee> GenerateData(int number=1)
         {
             var data = new List<Employee>();
             Random random = new Random();
@@ -24,28 +24,12 @@ namespace HW01_Solution
                 data.Add( new Employee {
                     Id = i,
                     Name = "Employee"+i,
-                    Salary = random.Next(10000,999999),
+                    Salary = random.Next(10000,99999),
                     Sale = random.Next(500_000,1000_000),
                     Rate = random.NextDouble() * 10,
                 } );
             }
             return data;
-        }
-
-        //Method
-        public void Display(int person)
-        {
-            var IncomeData = GenerateData(person);
-
-            foreach (var item in IncomeData)
-            {
-                var income = item.Salary + item.Sale * item.Rate;
-                var tax = income * 0.05;
-                var net = income - tax ;
-
-                Console.WriteLine($"{item.Id} {item.Name} {item.Salary} {item.Sale} " +
-                    $"{item.Rate} {income} {tax} {net}");
-            }
         }
 
     }
