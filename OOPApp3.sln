@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW01_Solution", "HW01_Solut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Constructor", "P02_Constructor\P02_Constructor.csproj", "{CA913C4B-4E15-4801-B2C2-A2E931D960A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise01_P82T5", "Exercise01_P82T5\Exercise01_P82T5.csproj", "{7BD4AEFD-7430-42D2-972B-DBDC634B6167}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CA913C4B-4E15-4801-B2C2-A2E931D960A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA913C4B-4E15-4801-B2C2-A2E931D960A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA913C4B-4E15-4801-B2C2-A2E931D960A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD4AEFD-7430-42D2-972B-DBDC634B6167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD4AEFD-7430-42D2-972B-DBDC634B6167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD4AEFD-7430-42D2-972B-DBDC634B6167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD4AEFD-7430-42D2-972B-DBDC634B6167}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

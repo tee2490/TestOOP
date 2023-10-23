@@ -1,6 +1,4 @@
-﻿
-
-using P02_Constructor;
+﻿using P02_Constructor;
 
 //var products = new Product();
 var products = new Product("Banana");
