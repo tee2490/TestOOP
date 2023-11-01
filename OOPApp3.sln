@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_Constructor", "P02_Cons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise01_P82T5", "Exercise01_P82T5\Exercise01_P82T5.csproj", "{7BD4AEFD-7430-42D2-972B-DBDC634B6167}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03-Encapsulate", "P03-Encapsulate\P03-Encapsulate.csproj", "{32358BD5-6364-457D-92D9-173C2841025E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Encapsulate", "P03-Encapsulate\P03-Encapsulate.csproj", "{32358BD5-6364-457D-92D9-173C2841025E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_01_TestInternal", "P03_01_TestInternal\P03_01_TestInternal.csproj", "{91FB7BF0-C2D1-45C9-877D-68EA4C8863EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_01_TestInternal", "P03_01_TestInternal\P03_01_TestInternal.csproj", "{91FB7BF0-C2D1-45C9-877D-68EA4C8863EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise02_P55T3", "Exercise02_P55T3\Exercise02_P55T3.csproj", "{9875C34F-BD97-42D5-A0D2-05109A208476}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{91FB7BF0-C2D1-45C9-877D-68EA4C8863EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91FB7BF0-C2D1-45C9-877D-68EA4C8863EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91FB7BF0-C2D1-45C9-877D-68EA4C8863EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9875C34F-BD97-42D5-A0D2-05109A208476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9875C34F-BD97-42D5-A0D2-05109A208476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9875C34F-BD97-42D5-A0D2-05109A208476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9875C34F-BD97-42D5-A0D2-05109A208476}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
