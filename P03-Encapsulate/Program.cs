@@ -1,5 +1,4 @@
-﻿
-using P03_Encapsulate;
+﻿using P03_Encapsulate;
 
 var account = new BankAccount();
 
@@ -9,3 +8,5 @@ account.Name = "Test";
 account.Rate = 10;
 
 account.SetPassword("1234");
+
+
