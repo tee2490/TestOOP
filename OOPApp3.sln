@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03-Encapsulate", "P03-Enca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_01_TestInternal", "P03_01_TestInternal\P03_01_TestInternal.csproj", "{91FB7BF0-C2D1-45C9-877D-68EA4C8863EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise02_P55T3", "Exercise02_P55T3\Exercise02_P55T3.csproj", "{9875C34F-BD97-42D5-A0D2-05109A208476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise02_P55T3", "Exercise02_P55T3\Exercise02_P55T3.csproj", "{9875C34F-BD97-42D5-A0D2-05109A208476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Polimorphism", "P04-Polimorphism\P04-Polimorphism.csproj", "{7F390465-4D10-4765-AE70-474B40563522}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{9875C34F-BD97-42D5-A0D2-05109A208476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9875C34F-BD97-42D5-A0D2-05109A208476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9875C34F-BD97-42D5-A0D2-05109A208476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F390465-4D10-4765-AE70-474B40563522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F390465-4D10-4765-AE70-474B40563522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F390465-4D10-4765-AE70-474B40563522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F390465-4D10-4765-AE70-474B40563522}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
