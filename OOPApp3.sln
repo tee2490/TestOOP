@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_01_TestInternal", "P03_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise02_P55T3", "Exercise02_P55T3\Exercise02_P55T3.csproj", "{9875C34F-BD97-42D5-A0D2-05109A208476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04-Polimorphism", "P04-Polimorphism\P04-Polimorphism.csproj", "{7F390465-4D10-4765-AE70-474B40563522}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Polimorphism", "P04-Polimorphism\P04-Polimorphism.csproj", "{7F390465-4D10-4765-AE70-474B40563522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Interface", "P05_Interface\P05_Interface.csproj", "{04EB7351-3C59-4C17-AFE3-ECBAE5C0B71A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{7F390465-4D10-4765-AE70-474B40563522}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F390465-4D10-4765-AE70-474B40563522}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F390465-4D10-4765-AE70-474B40563522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04EB7351-3C59-4C17-AFE3-ECBAE5C0B71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04EB7351-3C59-4C17-AFE3-ECBAE5C0B71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04EB7351-3C59-4C17-AFE3-ECBAE5C0B71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04EB7351-3C59-4C17-AFE3-ECBAE5C0B71A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
