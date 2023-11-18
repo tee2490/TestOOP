@@ -3,7 +3,7 @@
     public class ProductManagement : IProductManagement
     {
         public List<Product> Products { get; set; }
-
+ 
         public ProductManagement()
         {
             Products = new List<Product>();
@@ -44,5 +44,28 @@
             Products.Remove(product);
         }
 
+        public void UpdateProduct(Product NewProduct, Product OldProduct)
+        {
+            var index  = Products.IndexOf(OldProduct);
+            Products.Remove(OldProduct);
+            Products.Insert(index, NewProduct);
+           
+        }
+
+        public Product InputProduct(Product product)
+        {
+            Console.WriteLine("Product Id : " + product.Id);
+            
+            Console.Write("Input Name ");
+            product.Name = Console.ReadLine();
+
+            Console.Write("Input Price ");
+            product.Price = double.Parse(Console.ReadLine());
+
+            Console.Write("Input Category ");
+            product.Category= int.Parse(Console.ReadLine());
+
+            return product;
+        }
     }
 }

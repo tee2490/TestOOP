@@ -132,6 +132,20 @@
             DisplayProduct();
         }
 
+        public void UpdateProductService()
+        {
+        UpdateProductService:
+            var result = SearchProduct();
+
+            if (result == null) goto UpdateProductService;
+
+            var newProduct =  ProductManagement.InputProduct(result);
+
+            ProductManagement.UpdateProduct(newProduct,result);
+
+            DisplayProduct();
+        }
+
 
     }
 

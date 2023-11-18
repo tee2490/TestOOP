@@ -12,4 +12,6 @@ ps.DisplayProduct();
 
 //ps.SearchByAny();
 
-ps.DeleteProductById();
+//ps.DeleteProductById();
+
+ps.UpdateProductService();
