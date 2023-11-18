@@ -24,5 +24,17 @@
           //  Products.Find(p=>p.Id.Equals(productId));
           return  Products.FirstOrDefault(p => p.Id == productId);
         }
+
+        public List<Product> GetProductByAny(int number=0, string keyword="")
+        {
+            if (String.IsNullOrEmpty(keyword)) keyword = "XXX";
+
+          var result =  Products.Where(p=>p.Name.ToUpper().Contains(keyword.ToUpper()) ||
+            p.Id.Equals(number) ||
+            p.Price > number ||
+            p.Category.Equals(number)).ToList();
+
+            return result;
+        }
     }
 }
