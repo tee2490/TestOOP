@@ -83,15 +83,24 @@
             };
         }
 
-        public void SearchProduct()
+        public Product SearchProduct()
         {
             Console.Write("Enter Id ");
             var id = int.Parse(Console.ReadLine());
 
             var result = ProductManagement.GetProductById(id);
-            if (result == null) Console.WriteLine("Not found");
-            else Console.WriteLine($"{result.Id,5} {result.Name,5} {result.Price,5}" +
-                $" {result.Category,5}");
+            if (result == null)
+            {
+                Console.WriteLine("Not found");
+            }
+            else
+            {
+                Console.WriteLine($"{result.Id,5} {result.Name,5} {result.Price,5}" +
+                              $" {result.Category,5}");
+            }
+          
+            return result;
+            
         }
 
         public void SearchByAny()
@@ -110,6 +119,20 @@
                     $" {x.Price,5} {x.Category,5}"));
             }
         }
+
+        public void DeleteProductById()
+        {
+            var result = SearchProduct();
+
+            if (result == null) return;
+
+            ProductManagement.DeleteById(result);
+
+            Console.WriteLine();
+            DisplayProduct();
+        }
+
+
     }
 
     public class TempGroup

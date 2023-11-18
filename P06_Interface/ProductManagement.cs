@@ -28,7 +28,7 @@
         public List<Product> GetProductByAny(int number=0, string keyword="")
         {
             if (String.IsNullOrEmpty(keyword)) keyword = "XXX";
-
+          
           var result =  Products.Where(p=>p.Name.ToUpper().Contains(keyword.ToUpper()) ||
             p.Id.Equals(number) ||
             p.Price > number ||
@@ -36,5 +36,13 @@
 
             return result;
         }
+
+        public void DeleteById(Product product)
+        {
+            if(product == null) return; 
+
+            Products.Remove(product);
+        }
+
     }
 }

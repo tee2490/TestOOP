@@ -10,4 +10,6 @@ ps.DisplayProduct();
 
 //ps.SearchProduct();
 
-ps.SearchByAny();
+//ps.SearchByAny();
+
+ps.DeleteProductById();

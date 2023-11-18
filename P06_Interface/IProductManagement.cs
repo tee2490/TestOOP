@@ -7,6 +7,7 @@
         List<Product> GetProducts();
         Product GetProductById(int productId);
         List<Product> GetProductByAny(int number,string keyword);
+        void DeleteById(Product product);
 
     }
 }
