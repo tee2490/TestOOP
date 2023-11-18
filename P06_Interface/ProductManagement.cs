@@ -17,5 +17,12 @@
         {
             return Products;
         }
+
+        public Product GetProductById(int productId)
+        {
+          //  Products.Where(p=>p.Id == productId).FirstOrDefault();
+          //  Products.Find(p=>p.Id.Equals(productId));
+          return  Products.FirstOrDefault(p => p.Id == productId);
+        }
     }
 }
