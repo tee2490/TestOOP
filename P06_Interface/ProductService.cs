@@ -19,7 +19,8 @@
                 {
                     Id = i,
                     Name="Coffee-"+i,
-                    Price=random.Next(10,200)
+                    Price=random.Next(10,200),
+                    Category = random.Next(1,6)
                 });
             }
 
@@ -29,7 +30,7 @@
         {
             foreach (var item in ProductManagement.GetProducts())
             {
-                Console.WriteLine($"{item.Id,5} {item.Name,-10} {item.Price,5}");
+                Console.WriteLine($"{item.Id,5} {item.Name,-10} {item.Price,5} {item.Category,5}");
             }
         }
 
@@ -53,7 +54,7 @@
                     _ => 3,
                 };
 
-                temp.Add(new TempGroup { group = tempGr });
+                temp.Add(new TempGroup { group = tempGr,category=item.Category });
 
             }
             return temp;
@@ -65,8 +66,10 @@
 
             foreach (var item in numOfGroup)
             {
-                Console.WriteLine($"{NameOfPrice(item.Key),8} " +
-                    $"{GroupByPrice().Count(p=>p.group == item.Key)}");
+                Console.Write($"{NameOfPrice(item.Key),8}");
+                for (int i = 1; i <= 5; i++)
+                    Console.Write($"{item.Count(p=>p.category.Equals(i)),5}");
+                Console.WriteLine();
             }
         }
 
@@ -85,6 +88,7 @@
     public class TempGroup
     {
        public int group { get; set; }
+       public int category { get; set; }
     }
 
 
